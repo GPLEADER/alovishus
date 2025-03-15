@@ -1,0 +1,153 @@
+.favorite {
+  position: relative;
+  padding: 123px;
+  padding: 0 100px;
+  padding-bottom: 50px;
+
+  .favorite-decore {
+    position: absolute;
+    right: 0;
+    top: -200px;
+  }
+
+  .favorite-title {
+    h2 {
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 70px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      max-width: 604px;
+      margin: auto;
+      color: #64646A;
+    }
+  }
+
+  .favorite-cards {
+    display: flex;
+    margin-top: 104px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card {
+      position: relative;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0px 20px 60px 0px #A3A8B226;
+
+      .card-heading {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+        img {
+          position: absolute;
+          top: -50px;
+          left: 0;
+        }
+
+
+        .card-heading-title {
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            margin-top: 80px;
+            color: #64646A;
+          }
+
+          h3 {
+            font-weight: 600;
+            font-size: 40px;
+            max-width: 161px;
+
+          }
+        }
+      }
+
+      .card-title {
+        p {
+          font-family: Jost;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0%;
+          max-width: 327px;
+          color: #64646A;
+        }
+      }
+
+      .card-order {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 28px;
+          letter-spacing: 0%;
+
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1430px) {
+    .favorite-cards {
+      justify-content: center;
+      gap: 80px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 50px 10px;
+
+    .favorite-title {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .favorite-decore {
+      width: 40%;
+      top: -20px;
+    }
+
+    .card {
+      .card-heading {
+        img {
+          width: 40%;
+        }
+
+        .card-heading-title {
+          h3 {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .card-title {
+        .card-order {
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

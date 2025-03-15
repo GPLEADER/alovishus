@@ -1,0 +1,63 @@
+.order {
+  padding: 123px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  padding-bottom: 50px;
+
+  .order-title {
+    h2 {
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 70px;
+      letter-spacing: 0%;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #64646A;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .order-brand-img {
+      img {
+        width: 600px;
+      }
+
+    }
+
+    .order-title {
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+
+    .order-title {
+      text-align: center;
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 50px 10px;
+
+    .order-brand-img {
+      img {
+        margin-top: 50px;
+        width: 350px;
+      }
+    }
+  }
+}
